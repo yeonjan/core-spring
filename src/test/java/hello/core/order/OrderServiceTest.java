@@ -21,7 +21,7 @@ public class OrderServiceTest {
 
     @Test
     void createOrder(){
-        Long memberId =1L;
+        Long memberId =1L; //long은 null 을 넣을 수 없음
         Member member = new Member(memberId, "memberA", Grade.VIP);
         memberService.join(member);
 
